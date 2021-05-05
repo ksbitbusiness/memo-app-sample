@@ -7,3 +7,7 @@ html/.env
 html/comp.php
 html/input.php
 
+# npm
+package-lock.json
+node_modelues
+
