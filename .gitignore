@@ -6,6 +6,7 @@ html/.env
 # pug create files
 html/comp.php
 html/input.php
+html/list.php
 
 # npm
 package-lock.json

@@ -1,0 +1,17 @@
+.
+    <?php
+        function getHeader($apiKey)
+        {
+            return [
+                'Authorization: Bearer ' . $apiKey ,
+                'Content-Type: application/json',
+            ];
+        }
+        function getBaseAPIURL($baseID , $targetTable)
+        {
+            return implode( "/" , [
+                "https://api.airtable.com/v0" ,
+                $baseID ,
+                $targetTable ,
+            ]);
+        }
