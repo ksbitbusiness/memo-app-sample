@@ -2,3 +2,8 @@
 
 # env file
 html/.env
+
+# pug create files
+html/comp.php
+html/input.php
+
