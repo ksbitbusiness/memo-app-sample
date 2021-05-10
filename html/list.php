@@ -29,10 +29,14 @@
   <body>
     <h1>メモアプリ</h1>
     <h2>一覧</h2>
-    <ul><?php foreach( $response[ 'records' ] as $record ) { ?>
-      <li><?php echo nl2br($record[ 'fields' ][ 'Notes' ]); ?></li><?php } ?>
-      
-    </ul>
+    <ul>
+      <!-- recordsの数だけループ ここから -->
+      <?php foreach( $response[ 'records' ] as $record ) { ?>
+        <!-- Airtableの「Notes」フィールドを表示 -->
+        <li><?php echo nl2br($record[ 'fields' ][ 'Notes' ]); ?></li>
+      <?php } ?>
+      <!-- recordsの数だけループ ここあｍで -->
+      </ul>
   </body>
 </html>
 <?php
